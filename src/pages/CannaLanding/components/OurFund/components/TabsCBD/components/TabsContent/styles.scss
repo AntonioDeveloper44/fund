@@ -1,0 +1,54 @@
+@import '../../../../../../../../styles/constants/index.scss';
+@import '../../../../../../../../styles/_mixins.scss';
+
+.tabs-content {
+
+  display: flex;
+  justify-content: space-between;
+
+  &__text-block {
+    padding: 50px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 410px;
+    font-weight: $fontWeightThin;
+    letter-spacing: 0.2em;
+
+    p {
+      margin-bottom: 25px;
+      &:first-of-type {
+        margin-bottom: 35px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $black;
+        @media screen and (max-width: $deviceSizeXMD) {
+          text-align: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: $deviceSizeXMD) {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+
+  &__images {
+    max-width: 500px;
+    @media screen and (max-width: $deviceSizeXMD) {
+      max-width: none;
+    }
+
+
+    img {
+      margin-bottom: 20px;
+
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $deviceSizeXMD) {
+    flex-direction: column-reverse;
+  }
+}

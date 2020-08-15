@@ -1,0 +1,24 @@
+@import '../../../../styles/constants/index.scss';
+@import '../../../../styles/_mixins.scss';
+
+.hero {
+  background-image: url('../../../../assets/images/cbd-hero-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+
+  &__content {
+    position: relative;
+    min-height: 100vh;
+    padding: 110px 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+
+    @media screen and (max-width: $deviceSizeXS) {
+      padding: 120px 0 50px 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../../../../styles/index.scss';
+@import '../../../../../../styles/_mixins.scss';
+
+.logo {
+  margin-right: 40px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 120px;
+  text-transform: uppercase;
+  color: $white;
+  & p {
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+img {
+  width: 100%;
+}

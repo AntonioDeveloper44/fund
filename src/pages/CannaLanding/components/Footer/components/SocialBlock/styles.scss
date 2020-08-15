@@ -1,0 +1,51 @@
+@import '../../../../../../styles/constants/index.scss';
+@import '../../../../../../styles/_mixins.scss';
+
+.social-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  & > * {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.social-icon {
+  &__wrapper {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .social-icon__icon {
+      svg {
+        fill: rgb(255, 3, 62,);
+      }
+
+      div svg text {
+        font-size: 16px;
+        fill: rgb(255, 3, 62,);
+      }
+    }
+
+    &:hover {
+      border: 1px solid rgb(255, 3, 62,);
+      border-radius: 50%;
+
+      .social-icon__icon {
+        div svg text {
+          fill: rgb(255, 3, 62,);
+        }
+      }
+    }
+  }
+}

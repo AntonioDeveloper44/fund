@@ -1,0 +1,57 @@
+@import '../../styles/constants/index.scss';
+@import '../../styles/_mixins.scss';
+
+.section-title {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+
+  width: min-content;
+
+  &--fluid-width {
+    width: 100%;
+  }
+
+  &--align-left {
+  }
+  &--align-center {
+    align-items: center;
+  }
+  &--align-right {
+  }
+
+  &--color-primary {
+    color: $black;
+
+    .section-title__divider {
+      background-color: $textPrimary;
+    }
+  }
+
+  &--color-secondary {
+    color: $textSecondary;
+
+    .section-title__divider {
+      background-color: $textSecondary;
+    }
+  }
+
+  &__divider {
+    width: 100px;
+    height: 1px;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: $fontWeightBase;
+    white-space: nowrap;
+
+    @media screen and (max-width: $deviceSizeXSM) {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../../../../styles/constants/index.scss'; // Check path
+@import '../../../../../../styles/_mixins.scss'; // Check path
+
+// .name {}
+
+.topDecorationElement {
+  display: flex;
+  align-items: center;
+  top: 3px;
+  position: absolute;
+
+  span {
+    margin: 0 10px;
+    width: 100px;
+    border-top: 2px solid $white;
+  }
+  p {
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    display: none;
+  }
+}

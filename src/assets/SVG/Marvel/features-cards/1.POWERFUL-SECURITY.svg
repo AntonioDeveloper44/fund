@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.04 65.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #73c8b7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 28px;
+        font-family: Ionicons;
+      }
+    </style>
+  </defs>
+  <g id="Icon" transform="translate(-390.02 -4324.01)">
+    <ellipse id="circle" class="cls-1" style="fill: #73c8b7" cx="33.02" cy="32.99" rx="33.02" ry="32.99" transform="translate(390.02 4324.01)"/>
+    <text id="_" data-name="" class="cls-2" style="fill: #fff" transform="translate(423.065 4366.031)"><tspan x="-8.75" y="0"></tspan></text>
+  </g>
+</svg>

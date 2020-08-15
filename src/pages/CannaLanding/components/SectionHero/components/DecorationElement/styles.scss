@@ -1,0 +1,32 @@
+@import '../../../../../../styles/constants/index.scss'; // Check path
+@import '../../../../../../styles/_mixins.scss'; // Check path
+
+// .name {}
+
+.decorationElement {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -145px;
+  bottom: 165px;
+  transform: rotate(-90deg);
+
+
+
+  span {
+    margin-right: 30px;
+    width: 100px;
+    border-top: 2px solid $white;
+  }
+  p {
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: $deviceSizeXS) {
+    display: none;
+  }
+}
+
+@keyframes slide {
+
+}

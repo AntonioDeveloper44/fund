@@ -1,0 +1,51 @@
+@import '../../../../../../styles/constants/index.scss';
+@import '../../../../../../styles/_mixins.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &__item {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    @media (max-width: $deviceSizeMD) {
+      padding: 5px;
+    }
+
+    &--active {
+      position: relative;
+      border: 2px solid $white;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px $white, 2px 2px 2px $black;
+
+      &:after {
+        position: absolute;
+        left: calc(50% - 8px);
+        top: -20px;
+        width: 15px;
+        height: 15px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border: 3px solid white;
+        background-color: transparent;
+        transform: rotate(-45deg);
+        content: "";
+      }
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    color: $white;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: $deviceSizeSM) {
+    display: none;
+  }
+}

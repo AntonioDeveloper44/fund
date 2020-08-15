@@ -1,0 +1,149 @@
+@import '../../../../styles/index.scss';
+
+
+
+.author-block{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.expert {
+  width: 100vw;
+  max-width: 100vw;
+
+  &__cards {
+    width: 100%;
+    @include display-flex(center, center, row);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    padding: 0 5px;
+    max-width: 360px;
+    height: 540px;
+    margin: 130px auto 0;
+    background-color: $white;
+    @include display-flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    outline: none;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) scale3d(1, 1, 1) translate3D(0, 0, 0);
+    transition: all 0.7s ease-in-out;
+    @media screen and (max-width: $deviceSizeSM) {
+      margin-top: 100px;
+    }
+    @media screen and (max-width: $deviceSizeXS) {
+      margin-top: 70px;
+    }
+
+    &:hover {
+      animation: title-rotate 0.7s;
+      transform: rotateY(180deg) scale(0.9) translate3D(24px, -24px, 0);
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+
+      .expert__card-hover {
+        transform: translateZ(-5em) scale(1.1111) translate3d(-21px, 21px, 0) rotateY(180deg);
+      }
+    }
+
+    &-image {
+      @include display-flex;
+      max-width: 360px;
+      height: 412px;
+      margin-bottom: 8px;
+      background-color: $primaryMiddleGrey;
+    }
+
+    &-title {
+      min-height: 120px;
+      padding: 20px 16px;
+      margin-bottom: 8px;
+      background-color: $backgroundLightGrey;
+      text-align: center;
+    }
+
+    &-name {
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+
+    &-position {
+      margin-bottom: 45px;
+      font-size: 11px;
+    }
+
+    &-hover {
+      transform: translateZ(-5em) scale(0.9) rotateY(180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 360px;
+      height: 540px;
+      padding: 40px;
+      @include display-flex(column, space-between);
+      background-color: $primaryYellow;
+      text-align: center;
+      color: $black;
+
+      &-content {
+        @include display-flex(column, space-between);
+      }
+
+      &-name {
+        margin-top: 50px;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      &-position {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        margin-top: 60px;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+      }
+    }
+  }
+
+
+  &__social-block a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $primaryYellow;
+
+    svg .cls-1 {
+      fill: $primaryMiddleYellow;
+    }
+
+    &:hover {
+      border: 1px solid $white;
+      background-color: $primaryDarkYellow;
+
+      svg .cls-1 {
+        fill: $white;
+      }
+    }
+  }
+
+  &__info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../styles/index.scss";
+
+.title-block {
+  padding: 0 10px;
+  margin-bottom: 50px;
+  position: relative;
+  @include display-flex(column, center, center);
+  width: 100%;
+  text-align: center;
+
+  &--align-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  &--align-right {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  &--title,
+  &--second-title {
+    margin-bottom: 20px;
+    z-index: 1;
+    width: 100%;
+    color: $primaryLightGrey;
+    font-family: "Lato", sans-serif;
+    font-size: 4.8rem;
+    font-weight: 1000;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+
+    &-color-primaryMiddleGrey {
+      color: $primaryMiddleGrey;
+    }
+    &-color-primaryDarkYellow {
+      color: $primaryDarkYellow;
+    }
+    &-color-white {
+      color: $white;
+    }
+  }
+
+  &--subtitle {
+    position: absolute;
+    z-index: 2;
+    top: 54px;
+    width: max-content;
+    max-width: 95%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.875rem;
+    font-weight: $fontWeightBold;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
+
+  &--description {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: $fontWeightMedium;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+  }
+  &--description,
+  &--subtitle {
+    color: $primaryDarkGrey;
+    &-color-white {
+      color: $white;
+    }
+  }
+}
+@media (max-width: $deviceSizeSM) {
+  .title-block {
+    &--title,
+    &--second-title {
+      font-size: 4.845rem;
+    }
+    &--subtitle {
+      top: 46px;
+      font-size: 1.6rem;
+    }
+  }
+}
+@media (max-width: $deviceSizeXS) {
+  .title-block {
+    &--title,
+    &--second-title {
+      font-size: 3.25rem;
+    }
+    &--subtitle {
+      top: 34px;
+      font-size: 1.36rem;
+    }
+  }
+}

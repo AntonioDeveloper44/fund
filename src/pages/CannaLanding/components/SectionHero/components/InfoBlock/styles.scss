@@ -1,0 +1,80 @@
+@import '../../../../../../styles/constants/index.scss';
+
+.info-block {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  &__span {
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    span {
+      text-transform: uppercase;
+      font-weight: $fontWeightBold;
+      font-size: 55px;
+      letter-spacing: 0.05em;
+
+
+      @media screen and (max-width: $deviceSizeXSM) {
+        font-size: 35px;
+      }
+      @media screen and (max-width: $deviceSizeXXS) {
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  p:nth-child(2) {
+    font-size: 55px;
+    letter-spacing: 0.28em;
+    @media screen and (max-width: $deviceSizeXSM) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: $deviceSizeXXS) {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  p:nth-child(3) {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: $fontWeightThin;
+    letter-spacing: 0.28em;
+    @media screen and (max-width: $deviceSizeXXS) {
+      font-size: 20px;
+    }
+  }
+
+  a {
+    letter-spacing: 0.28em;
+  }
+}
+
+@keyframes slidein {
+  0%, 60%, 75%, 90%, 100% {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
+
+}
