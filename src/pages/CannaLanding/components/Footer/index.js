@@ -1,4 +1,3 @@
-import types from 'prop-types';
 import React from 'react';
 import { Divider } from 'antd';
 import { Button, Tooltip } from 'antd';
@@ -49,10 +48,3 @@ export const Footer = props => {
   );
 };
 
-// ----------------
-// Type of props
-Footer.propTypes = {
-  prop: types.string,
-};
-// Default value for props
-Footer.defaultProps = {};

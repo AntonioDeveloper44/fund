@@ -2,7 +2,6 @@ import React from "react";
 
 import imgCard1 from "../../../../assets/images/author.jpg";
 
-
 import pinterestIcon from "../../../../assets/SVG/social/pinterestIcon.svg";
 import linkedinIcon from "../../../../assets/SVG/social/linkedinIcon.svg";
 import fasebookIcon from "../../../../assets/SVG/social/fasebookIcon.svg";

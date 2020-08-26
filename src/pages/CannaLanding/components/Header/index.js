@@ -2,7 +2,6 @@ import React, { useState , useEffect } from 'react';
 import classNames from "classnames";
 
 // Components
-
 import { Navbar } from './components/Navbar';
 import { Logo } from './components/Logo';
 

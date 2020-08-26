@@ -1,5 +1,4 @@
 import { ReactSVG } from "react-svg";
-import types from "prop-types";
 import React from "react";
 
 import "./styles.scss";
@@ -33,9 +32,3 @@ export const SocialBlock = ({ className, socialData }) => {
   );
 };
 
-SocialBlock.propTypes = {
-  className: types.string,
-  socialData: types.any,
-};
-
-SocialBlock.defaultProps = {};

@@ -1,12 +1,9 @@
-import types from 'prop-types';
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 
 // Styles
-
 import './styles.scss';
 
-// ----------------
 
 export const SocialBlock = ({ links }) => {
   // Render
@@ -29,15 +26,3 @@ export const SocialBlock = ({ links }) => {
     </div>
   );
 };
-
-// ----------------
-
-// Type of props
-
-SocialBlock.propTypes = {
-  links: types.array.isRequired,
-};
-
-// Default value for props
-
-SocialBlock.defaultProps = {};

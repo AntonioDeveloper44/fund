@@ -20,10 +20,10 @@ export const CannaLanding = () => {
     <div className="landing">
       <Header/>
       <SectionHero/>
-      <OurFund/>{/*наш фонд */}
-      <Author/>{/*основатель */}
-      <Projects/> {/*проэкти*/}
-      <Footer/>{/*контакти */}
+      <OurFund/>
+      <Author/>
+      <Projects/>
+      <Footer/>
       <BackTop/>
     </div>
   );

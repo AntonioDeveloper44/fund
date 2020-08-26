@@ -1,4 +1,3 @@
-import types from "prop-types";
 import React from "react";
 
 import { SocialBlock } from "./SocialBlock";
@@ -18,9 +17,3 @@ export const CardHover = ({ cardsData, socialData }) => {
   );
 };
 
-CardHover.propTypes = {
-  cardsData: types.any,
-  socialData: types.any,
-};
-
-CardHover.defaultProps = {};
