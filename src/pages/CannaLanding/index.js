@@ -21,7 +21,7 @@ export const Landing = () => {
       <Header/>
       <SectionHero/>
       <OurFund/>
-      <Author/>
+      <Author/>{/*вставьте сервисы оплаты сюда */}
       <Projects/>
       <Footer/>
       <BackTop/>
