@@ -1,4 +1,4 @@
-import types from 'prop-types';
+
 import React from 'react';
 
 // Components
@@ -26,14 +26,4 @@ export const SectionHero = props => {
   );
 };
 
-// ----------------
 
-// Type of props
-
-SectionHero.propTypes = {
-  prop: types.string,
-};
-
-// Default value for props
-
-SectionHero.defaultProps = {};

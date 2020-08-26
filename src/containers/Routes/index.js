@@ -2,10 +2,14 @@ import React from 'react';
 
 // Pages
 
-import { CannaLanding } from '../../pages/CannaLanding';
+import { Landing } from '../../pages/CannaLanding';
 
 // --------------------
 
 export const Routes = () => {
-  return <CannaLanding />;
+  return (
+
+    <Landing />
+
+    );
 };

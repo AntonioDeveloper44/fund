@@ -15,7 +15,7 @@ import './styles.scss';
 
 // --------------------
 
-export const CannaLanding = () => {
+export const Landing = () => {
   return (
     <div className="landing">
       <Header/>
