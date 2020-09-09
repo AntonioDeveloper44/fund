@@ -7,7 +7,6 @@ import Slider from "react-slick";
 import { TabsCBD } from './components/TabsCBD';
 
 import { ReviewsCard } from '../Projects/components/ReviewsCard';
-import { CustomSlider } from '../Projects/components/CustomSlider';
 
 //Data
 import { reviewsSlides } from '../Projects/components/ReviewsCard/data';
@@ -15,6 +14,8 @@ import { reviewsSlides } from '../Projects/components/ReviewsCard/data';
 
 import './styles.scss';
 import './../../../../styles/index.scss';
+import { defaultSettings } from './data';
+
 
 // ---------------
 
@@ -29,10 +30,11 @@ export const OurFund = () => {
       </div>
 
       <div className="ourFundSlider">
-        <Slider className="reviews__slider" arrows="false">
-          {reviewsSlides.map((item) => {
+        <Slider {...defaultSettings} className="reviews__slider" >
+          {reviewsSlides.map((item, index) => {
             return (
               <ReviewsCard
+                key={index}
                 className="reviews__card"
                 description={item.desc}
 

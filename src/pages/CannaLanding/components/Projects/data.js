@@ -76,6 +76,7 @@ export const socialData = [
     icon: appleIcon,
   },
 ];
+
 export const defaultSettings = {
   dots: false,
   dotsClass: `slick-dots expert__slick-dots`,

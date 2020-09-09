@@ -19,28 +19,28 @@ export const Footer = props => {
         <div className="footer__social-block">
           <SocialBlock links={socialLinks} />
         </div>
-        <Divider type="vertical"></Divider>
+        <Divider type="vertical" />
         <div className="footer__subscribe-block">
           <p>SUBSCRIBE TO NEWSLETTER</p>
           <div className="s-input">
-            <input type="email" placeholder="Email"></input>
+            <input type="email" placeholder="Email" />
             <Tooltip title="subscribe">
-              <Button icon={<ArrowRightOutlined />}></Button>
+              <Button icon={<ArrowRightOutlined />} />
             </Tooltip>
           </div>
           <p>© 2020 БО "Віра Надія Любов"</p>
         </div>
         <div className="footer__links">
           <div className="links-left">
-            <a>PRIVACY POLICY</a>
-            <a>TERMS OF USE </a>
-            <a>RETURN POLICY</a>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS OF USE </p>
+            <p>RETURN POLICY</p>
           </div>
 
           <div className="links-right">
-            <a>SHIPPING INFO</a>
-            <a>RETURNS / EXCHANGES</a>
-            <a>CONTACT</a>
+            <p>SHIPPING INFO</p>
+            <p>RETURNS / EXCHANGES</p>
+            <p>CONTACT</p>
           </div>
         </div>
       </div>

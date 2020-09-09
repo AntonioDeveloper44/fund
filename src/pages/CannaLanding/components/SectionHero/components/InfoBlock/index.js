@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-
+import { history } from '../../../../../../index';
 // Styles
 import './styles.scss';
 import { Button } from '../../../../../../components/Button';
 
 // ----------------
 export const InfoBlock = () => {
+
 
   // Render
   return (
@@ -18,7 +19,7 @@ export const InfoBlock = () => {
       <p>
       Благодійний Фонд України
       </p>
-      <Button size="lg" margin="true" marginTop>
+      <Button size="lg" margin="true" marginTop onClick={() => history.push('/help')}>
         Допомогти
       </Button>
       <Link

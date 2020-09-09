@@ -1,14 +1,19 @@
-// Styles
+import React from 'react';
 
+// Styles
 import './styles/fonts.scss';
 import './styles/index.scss';
 
-import React from 'react';
-
 // Containers
 
-import { Routes } from './containers/Routes';
 
-const App = () => <Routes />;
+import { Landing } from './pages/CannaLanding';
 
-export default App;
+export const App = () => {
+
+  return (
+    <Landing/>
+  );
+};
+
+

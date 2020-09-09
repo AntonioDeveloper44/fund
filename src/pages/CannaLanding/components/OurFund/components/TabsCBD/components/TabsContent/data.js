@@ -1,12 +1,10 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 
-import tabsImageMountin from '../../../../../../../../assets/images/tabsImageMountain.png';
-import tabsImageField from '../../../../../../../../assets/images/TabsImageField.png';
 import kids from './../../../../../../../../assets/images/help.jpg'
 import kidsAgain from './../../../../../../../../assets/images/helptoo.jpg'
 import handsHeart from '../../../../../../../../assets/images/handsHeart.png'
-import heartLock from '../../../../../../../../assets/images/heartLock.jpg'
+
 
 
 import responsiveDesign from "../../../../../../../../assets/SVG/Marvel/2.About-Responsive_Design.svg";

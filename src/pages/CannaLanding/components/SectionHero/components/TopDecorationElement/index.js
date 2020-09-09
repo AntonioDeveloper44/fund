@@ -1,5 +1,3 @@
-import classNames from 'classnames';
-import types from 'prop-types';
 import React from 'react';
 
 // Styles

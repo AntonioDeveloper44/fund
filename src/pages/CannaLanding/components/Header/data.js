@@ -17,10 +17,6 @@ export const navigationLinks = [
     to:"projects",
   },
   {
-    label: 'Допомогти ',
-    to:"help",
-  },
-  {
     label: 'Контакти ',
     to:"footer",
   },

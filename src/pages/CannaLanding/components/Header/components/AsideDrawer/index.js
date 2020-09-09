@@ -18,9 +18,10 @@ const AsideDrawer = ({ links, isOpen }) => {
     <>
       <aside className={`aside ${modify}`}>
 
-        {links.map(link => {
+        {links.map((link , index) => {
           return (
             <Link
+              key={index}
               className="navbar__item"
               activeClass="navbar__item--active"
               to={link.to}

@@ -44,7 +44,7 @@ Button.propTypes = {
   fluidWidth: types.bool,
   withMargin: types.bool,
   children: types.node.isRequired,
-  onClick: types.func.isRequired,
+  onClick: types.func,
   color: types.oneOf(['secondary', 'primary']),
   size: types.oneOf(['xs', 'sm', 'md', 'lg']),
   border: types.oneOf(['withBorder', 'leftBorder']),

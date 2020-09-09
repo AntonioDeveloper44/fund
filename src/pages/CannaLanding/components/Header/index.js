@@ -15,7 +15,7 @@ import AsideDrawer from './components/AsideDrawer';
 import './styles.scss';
 // ----------------
 
-const headerHeight = 80;
+
 const useCurrentPosition = () => {
   const [position, setPosition] = useState(window.scrollY);
 
