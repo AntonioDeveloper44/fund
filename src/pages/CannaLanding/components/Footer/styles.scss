@@ -4,7 +4,8 @@
 .footer {
   font-family: 'Permanent Marker', cursive;
   position: relative;
-  height: 500px;
+  min-height: 100vh;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +107,7 @@
   &__links {
     width: 100%;
     max-width: 1100px;
-    top: 25%;
+    top: 45%;
     color: black;
     // right: 25%;
     position: absolute;

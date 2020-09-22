@@ -5,7 +5,7 @@
   color: black;
 
   &__content {
-    padding: 80px 16px 250px;
+    padding: 120px 16px 250px;
 
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@
         animation: title-rotate 0.7s;
         transform: rotateY(180deg) scale(0.9) translate3D(24px, -24px, 0);
 
-        .expert__card-hover {
+        .projects__card-hover {
           transform: translateZ(-5em) scale(1.1111) translate3d(-21px, 21px, 0) rotateY(180deg);
         }
       }

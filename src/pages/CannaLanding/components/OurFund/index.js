@@ -6,15 +6,17 @@ import Slider from "react-slick";
 
 import { TabsCBD } from './components/TabsCBD';
 
-import { ReviewsCard } from '../Projects/components/ReviewsCard';
 
 //Data
-import { reviewsSlides } from '../Projects/components/ReviewsCard/data';
+
 // Styles
 
 import './styles.scss';
 import './../../../../styles/index.scss';
 import { defaultSettings } from './data';
+
+import { reviewsSlides } from './components/ReviewsCard/data';
+import { ReviewsCard } from './components/ReviewsCard';
 
 
 // ---------------
@@ -36,7 +38,7 @@ export const OurFund = () => {
               <ReviewsCard
                 key={index}
                 className="reviews__card"
-                description={item.desc}
+                description={item.description}
 
                 image={item.image}
                 id={item.id}

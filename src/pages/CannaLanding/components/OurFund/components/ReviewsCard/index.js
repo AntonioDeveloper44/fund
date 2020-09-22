@@ -7,7 +7,7 @@ import { TitleBlock } from '../../../../../../components/TitleBlock';
 
 //----------------
 
-export const ReviewsCard = ({ image, desc }) => {
+export const ReviewsCard = ({ image, description }) => {
   //Modify styles
 
   // Render
@@ -16,7 +16,7 @@ export const ReviewsCard = ({ image, desc }) => {
       <div className="reviews-card__info">
         <TitleBlock title="Our Fund" subtitle="Наш Фонд" className="ourPhund"
                     maxWidth="1000"
-                    description='opisaniye' />
+                    description={description} />
       </div>
         <div className="reviews-card__image-wrap">
           <img

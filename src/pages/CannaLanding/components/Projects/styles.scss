@@ -1,8 +1,7 @@
 @import "../../../../styles/index";
 
 .projects {
-  padding: 50px 16px;
-
+  padding: 150px 16px 20px;
   .allProjectsButton{
     margin:30px auto;
 
@@ -45,7 +44,7 @@
     &:hover {
       animation: title-rotate 0.7s;
       transform: rotateY(180deg) scale(0.9) translate3D(24px, -24px, 0);
-      .expert__card-hover {
+      .projects__card-hover {
         transform: translateZ(-5em) scale(1.1111) translate3d(-21px, 21px, 0)
         rotateY(180deg);
       }
@@ -62,7 +61,7 @@
       min-height: 120px;
       padding: 20px 16px;
       margin-bottom: 8px;
-      background-color: $backgroundLightGrey;
+      background-color: rgb(255, 3, 62, );
       text-align: center;
     }
 
@@ -85,12 +84,13 @@
       height: 540px;
       padding: 40px;
       @include display-flex(center, space-between);
-      background-color: $primaryYellow;
+      background-color: rgb(255, 3, 62, );
       text-align: center;
       color: $black;
 
       &-content {
-        @include display-flex;
+        display: flex;
+        flex-direction: column;
       }
       &-name {
         margin-top: 50px;
@@ -180,7 +180,8 @@
   }
 }
 
-.expert__slider {
+.projects__slider {
+
   .slick-next,
   .slick-prev {
     position: absolute;
@@ -206,7 +207,9 @@
       }
     }
   }
-
+  .slick-prev {
+    left: -15px;
+  }
   .slick-prev svg {
     left: 30px;
   }
@@ -217,6 +220,7 @@
 .slick-slide > div {
   display: flex;
   justify-content: center;
+  background-color: #FAF0E6;
 }
 
 

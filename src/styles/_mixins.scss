@@ -10,7 +10,7 @@
 
 @mixin display-flex(
   $flex-direction: row,
-  $align-horizontal: start,
+  $align-horizontal: center,
   $align-vertical: stretch
 ) {
   display: flex;

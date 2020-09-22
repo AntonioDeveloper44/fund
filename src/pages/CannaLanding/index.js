@@ -15,6 +15,7 @@ import './styles.scss';
 import { Redirect, Route } from 'react-router-dom';
 import { News } from '../News/News';
 import { Payment } from '../Payment/Payment';
+import { Faq } from './components/Faq/Faq';
 
 
 // --------------------
@@ -30,6 +31,7 @@ export const Landing = () => {
         <OurFund/>
         <Author/>{/*вставьте сервисы оплаты сюда */}
         <Projects/>
+        <Faq />
         <Footer/>
       </Route>
 

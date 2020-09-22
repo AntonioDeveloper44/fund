@@ -1,12 +1,14 @@
 import { ReactSVG } from "react-svg";
 import React from "react";
 
-import imgCard1 from "../../../../assets/images/heartLock.jpg";
-// import imgCard2 from "../../../../assets/images/Marvel/9.Team_Img-2.png";
-// import imgCard3 from "../../../../assets/images/Marvel/9.Team_Img-3.png";
-// import imgCard4 from "../../../../assets/images/Marvel/6.Gallery_Img-2.png";
-// import imgCard5 from "../../../../assets/images/Marvel/6.Gallery_Img-6.png";
-// import imgCard6 from "../../../../assets/images/Marvel/6.Gallery_Img-8.png";
+import imgCard1 from "../../../../assets/images/santehn.jpg";
+import imgCard2 from "../../../../assets/images/nan.jpg";
+import imgCard3 from "../../../../assets/images/houseRepair.jpg";
+import imgCard4 from "../../../../assets/images/heartQure.jpg";
+import imgCard5 from "../../../../assets/images/carDIO.jpg";
+
+
+
 
 import pinterestIcon from "../../../../assets/SVG/social/pinterestIcon.svg";
 import linkedinIcon from "../../../../assets/SVG/social/linkedinIcon.svg";
@@ -21,33 +23,39 @@ import arrowPrev from "../../../../assets/SVG/ArrowPrev.svg";
 export const cardsData = [
   {
     cardImg: <img height="100%" alt="hero" src={imgCard1} />,
-    name: "Окна в Ахмадете",
-    position: "г.Киев",
+    name: "Сантехнічні роботи",
+    position: "Заміна труб водопостачання",
     text:
-      "Lorem ipsum dolor sit amet, nemore latine graecis id est, omnium latine eu per. Has ne illud appetere fabellas, ne quaeque nominati mea.",
+      "Хочу подякувати фонд Віра Надія Любов. Моїй сусідці вони безкоштовно поміняли унітаз та всю сантехніку. Сусідка живе сама. 85 років. Від її імені дякую працівників цього фонду.",
   },
   {
-    cardImg: <img height="100%" alt="hero" src={imgCard1} />,
-    name: "проект1",
-    position: "город",
+    cardImg: <img height="100%" alt="hero" src={imgCard2} />,
+    name: "Допомога матері-одиночці",
+    position: "Ліки та дитяче харчування",
     text:
-      "Lorem ipsum dolor sit amet, nemore latine graecis id est, omnium latine eu per. Has ne illud appetere fabellas, ne quaeque nominati mea. Has ne illud appetere fabellas, ne quaeque nominati mea.",
+      "Я, мать одиночка. У меня родился сын у которого аллергия на лекарства и лактозу детского питания. Я прочитала о фонде в интернете. Необходимо было сделать дорогостоящие прививки ребёнку и ежедневное питания. Мне много раз оказывали помощь. Спасибо фонду \"Вера, Надежда, Любовь\" Васильева Татьяна",
   },
   {
-    cardImg: <img height="100%" alt="hero" src={imgCard1} />,
-    name: "проект2",
-    position: "город",
+    cardImg: <img height="100%" alt="hero" src={imgCard3} />,
+    name: 'Ремонт будівлі',
+    position: "Допомога після повеню у селі",
     text:
-      "Lorem ipsum dolor sit amet, nemore latine graecis id est, omnium latine eu per. Has ne illud appetere fabellas, ne quaeque nominati mea. Has ne illud appetere fabellas, ne quaeque nominati mea. Has ne illud appetere fabellas, ne quaeque nominati mea.",
+      "Я, многодетная мать. Живу в селе в стареньком доме. Прошёл ливень и разрушил часть дома, мне соседи подсказали, что есть фонд помощи \"Вера, Надежда, Любовь\" и как к ним обратиться. И мне была оказана помощь на ремонт дома. Спасибо. Плыз Людмила",
   },
   {
-    cardImg: <img height="100%" alt="hero" src={imgCard1} />,
-    name: "проект3",
-    position: "город",
+    cardImg: <img height="100%" alt="hero" src={imgCard4} />,
+    name: "Тяжка хвороба серця",
+    position: "Ліки та діагностика",
     text:
-      "Lorem ipsum dolor sit amet, nemore latine graecis id est, omnium latine eu per. Has ne illud appetere fabellas, ne quaeque nominati mea.",
+      "Я, пенсионерка. У меня была обнаружена болезнь сердца. Для лечения необходимы были дорогостоящие лекарства и анализы. Мне в больнице подсказали что есть, такой фонд помощи \"Вера, Надежда, Любовь\", я много прочитала хороших отзывов о фонде и тоже решила обратиться за помощью и мне не отказали. Спасибо. Талапа В.Я.",
   },
-
+  {
+    cardImg: <img height="100%" alt="hero" src={imgCard5} />,
+    name: "Піклування за пенсіонеркою",
+    position: "Ліки та діагностика",
+    text:
+      "Благодарю благотворительный фонд, Вера, Надежда, Любовь за помощь. Мне 72 года. Живу одна. Месяц назад попала в больницу с проблемами сердца. Денег на лечение не было. Подсказали что можно обратиться за помощью в этот фонд. И они мне помогли. Закупили всё необходимое для лечения. На 25 тысяч гривен и привозили продукты питания. Благодарю вас, добрые люди!!! Побольше бы таких!!! Валя.",
+  },
 ];
 
 export const socialData = [
@@ -79,7 +87,7 @@ export const socialData = [
 
 export const defaultSettings = {
   dots: false,
-  dotsClass: `slick-dots expert__slick-dots`,
+  dotsClass: `slick-dots projects__slick-dots`,
   infinite: true,
   autoplay: true,
   autoplaySpeed: 3000,

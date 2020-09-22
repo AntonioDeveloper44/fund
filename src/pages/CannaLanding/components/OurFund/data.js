@@ -3,7 +3,7 @@ export const defaultSettings = {
   fade: true,
   arrows:false,
   dots: false,
-  dotsClass: `slick-dots expert__slick-dots`,
+  dotsClass: `slick-dots projects__slick-dots`,
   infinite: true,
   autoplay: true,
   autoplaySpeed: 1000,

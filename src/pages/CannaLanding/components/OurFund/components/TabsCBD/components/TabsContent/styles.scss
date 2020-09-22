@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   &__text-block {
-    padding: 50px 10px 20px;
+    padding: 5px 10px 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,6 +35,10 @@
   }
 
   &__images {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 500px;
     @media screen and (max-width: $deviceSizeXMD) {
       max-width: none;

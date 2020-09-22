@@ -9,12 +9,12 @@ export const navigationLinks = [
     to:"ourFund",
   },
   {
-    label: 'Засновник',
-    to:"author",
-  },
-  {
     label: 'Проекти ',
     to:"projects",
+  },
+  {
+    label: 'Запитання ',
+    to:"faq",
   },
   {
     label: 'Контакти ',

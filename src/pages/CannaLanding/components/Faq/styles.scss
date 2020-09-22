@@ -1,0 +1,33 @@
+.faq{
+  user-select: text;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .Collapsible {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1.5px solid indianred;
+
+    &:last-of-type {
+      border-bottom: 1.5px solid indianred;
+    }
+
+    p {
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+
+    .Collapsible__trigger {
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      line-height: 55px;
+      text-transform: uppercase;
+      color: indianred;
+    }
+  }
+}
