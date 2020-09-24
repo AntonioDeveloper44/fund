@@ -85,6 +85,7 @@ export const socialData = [
   },
 ];
 
+
 export const defaultSettings = {
   dots: false,
   dotsClass: `slick-dots projects__slick-dots`,

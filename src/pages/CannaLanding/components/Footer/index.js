@@ -43,7 +43,7 @@ export class Footer extends React.Component  {
               <Button key="back" onClick={this.handleCancel}>
                 Відмінити
               </Button>,
-              <Button key="submit" type="primary" onClick={this.handleOk}>
+              <Button key="submit" type="primary"n onClick={this.handleOk}>
                 Добре
               </Button>,
             ]}

@@ -16,12 +16,13 @@ import { TitleBlock } from '../../../../components/TitleBlock';
 
 export const Projects = (props) => {
   //Render
+
   return (
     <div className="projects" id="projects">
       <ContentContainer>
         <div className="projects__content">
           <TitleBlock title='Наші проекти' subtitle='НАШІ ДОБРІ СПРАВИ' />
-          <Slider {...defaultSettings} className={`projects__slider`}>
+          <Slider {...defaultSettings}  className={`projects__slider`}>
             {cardsData.map(({ cardImg, name, position }, index) => {
               return (
                 <div className={`projects__card`} key={`1${index}`}>
