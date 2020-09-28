@@ -17,7 +17,7 @@ export const InfoBlock = () => {
       </div>
       <p>Trust Hope Love</p>
       <p>
-      Благодійний Фонд України
+      Благодійний Фонд України!
       </p>
       <Button size="lg" margin="true" marginTop onClick={() => history.push('/help')}>
         Допомогти
