@@ -1,7 +1,7 @@
-import types from "prop-types";
-import React from "react";
+import types from 'prop-types';
+import React from 'react';
 
-import "./styles.scss";
+import './styles.scss';
 
 export const TitleBlock = ({
   className,
@@ -13,7 +13,7 @@ export const TitleBlock = ({
   align,
   titleColor,
   textColor,
-  desc
+  desc,
 }) => {
   return (
     <div
@@ -60,19 +60,19 @@ TitleBlock.propTypes = {
   title: types.string.isRequired,
   subtitle: types.string,
   description: types.string,
-  align: types.oneOf(["left", "center", "right"]),
+  align: types.oneOf(['left', 'center', 'right']),
   titleColor: types.oneOf([
-    "primaryLightGrey",
-    "primaryMiddleGrey",
-    "primaryDarkYellow",
-    "white",
+    'primaryLightGrey',
+    'primaryMiddleGrey',
+    'primaryDarkYellow',
+    'white',
   ]),
-  textColor: types.oneOf(["primaryDarkGrey", "white"]),
+  textColor: types.oneOf(['primaryDarkGrey', 'white', 'wheat']),
 };
 
 TitleBlock.defaultProps = {
-  titleColor: "white",
-  textColor: "primaryDarkGrey",
-  align: "center",
-  maxWidth: "100%",
+  titleColor: 'white',
+  textColor: 'primaryDarkGrey',
+  align: 'center',
+  maxWidth: '100%',
 };

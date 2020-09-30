@@ -14,17 +14,22 @@ export const ReviewsCard = ({ image, description }) => {
   return (
     <div className={`reviews-card`}>
       <div className="reviews-card__info">
-        <TitleBlock title="Our Fund" subtitle="Наш Фонд" className="ourPhund"
-                    maxWidth="1000"
-                    description={description} />
+        <TitleBlock
+          textColor={'wheat'}
+          title="Our Fund"
+          subtitle="Наш Фонд"
+          className="ourPhund"
+          maxWidth="1000"
+          description={description}
+        />
       </div>
-        <div className="reviews-card__image-wrap">
-          <img
-            className="reviews-card__image img-contain"
-            src={image}
-            alt="poorMan"
-          />
-        </div>
+      <div className="reviews-card__image-wrap">
+        <img
+          className="reviews-card__image img-contain"
+          src={image}
+          alt="poorMan"
+        />
+      </div>
     </div>
   );
 };

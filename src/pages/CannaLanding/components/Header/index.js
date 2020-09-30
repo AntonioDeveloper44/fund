@@ -1,32 +1,32 @@
-import React, { useState , useEffect } from 'react';
-import classNames from "classnames";
+import React, { useState, useEffect } from 'react';
+import classNames from 'classnames';
 // Components
 import { Navbar } from './components/Navbar';
 import { Logo } from './components/Logo';
 // Static
-import { navigationLinks } from './data';
+
 // Assets
-import logo from '../../../../assets/images/logo.png'
+import logo from '../../../../assets/images/logo.png';
 // Styles
 import HamburgerButton from './components/HamburgerButton';
 import AsideDrawer from './components/AsideDrawer';
 import './styles.scss';
 
 import { Button } from 'antd';
-import { useTranslation } from 'react-i18next';
 
 // ----------------
 
+import { useTranslation } from 'react-i18next';
 
 const useCurrentPosition = () => {
   const [position, setPosition] = useState(window.scrollY);
 
   useEffect(() => {
     const handleScroll = () => setPosition(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -43,16 +43,15 @@ export const Header = (props) => {
   };
 
   const modify = classNames({
-    " header--on-scroll": currentPosition >= 30,
+    ' header--on-scroll': currentPosition >= 30,
   });
   // Render
 
-  const {i18n} = useTranslation();
+  const { i18n } = useTranslation();
 
-  const changeLanguage = lng => {
+  const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-
 
   return (
     <div className={`header${modify}`}>
@@ -62,15 +61,18 @@ export const Header = (props) => {
           className="header__menu-btn-wrapper"
           isOpen={isAsideOpen}
         />
-        <AsideDrawer isOpen={isAsideOpen} links={navigationLinks} />
+        <AsideDrawer isOpen={isAsideOpen} />
         <div className="header__left-block">
-          <Navbar links={navigationLinks} />
+          <Navbar />
         </div>
-        <Button type='link' onClick={changeLanguage('ua')}>UA</Button>
-        <Button type='link' onClick={changeLanguage('en')}>ENG</Button>
-        <Logo maxWidth={120} image={logo}/>
+        <Button type="link" onClick={() => changeLanguage('ua')}>
+          UA
+        </Button>
+        <Button type="link" onClick={() => changeLanguage('en')}>
+          ENG
+        </Button>
+        <Logo maxWidth={120} image={logo} />
       </div>
     </div>
   );
 };
-

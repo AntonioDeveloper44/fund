@@ -1,26 +1,24 @@
-import classNames from 'classnames';
-import types from 'prop-types';
+
 import React from 'react';
 
 // Styles
 
 import './styles.scss';
+import { useTranslation } from 'react-i18next';
 
 // ----------------
 
 export const DecorationElement = props => {
   // Modify styles
 
-  const modify = classNames({
-    ' DecorationElement': props,
-  });
+
 
   // Render
-
+ const {t} = useTranslation()
   return (
-    <div className={`decorationElement${modify}`}>
+    <div className="decorationElement">
       <span></span>
-      <p>Не бути байдужим - наша справа!</p>
+      <p>{t('heroDecor')}</p>
     </div>
   );
 };
@@ -29,10 +27,3 @@ export const DecorationElement = props => {
 
 // Type of props
 
-DecorationElement.propTypes = {
-  prop: types.string,
-};
-
-// Default value for props
-
-DecorationElement.defaultProps = {};

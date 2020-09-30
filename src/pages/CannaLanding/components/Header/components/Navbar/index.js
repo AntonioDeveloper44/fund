@@ -1,47 +1,71 @@
-import types from 'prop-types';
 import { Link } from 'react-scroll';
-import React, { Fragment } from 'react';
+import React from 'react';
 
 // Styles
 
 import './styles.scss';
+import { useTranslation } from 'react-i18next';
 
 // ----------------
 
-export const Navbar = ({ links }) => {
-
+export const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <div className="navbar">
-      {links.map(( link , index) => {
-        return (
-          <Fragment key={index}>
-            <Link
-              className="navbar__item"
-              activeClass="navbar__item--active"
-              to={link.to}
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              isDynamic={true}
-            >
-          <div className='navbar__item-indicator'></div>
-              {link.label}
-            </Link>
-          </Fragment>
-        );
-      })}
+      <Link
+        className="navbar__item"
+        activeClass="navbar__item--active"
+        to="ourFund"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        isDynamic={true}
+      >
+        <div className="navbar__item-indicator"></div>
+        {t('headerLink1')}
+      </Link>
+      <Link
+        className="navbar__item"
+        activeClass="navbar__item--active"
+        to="projects"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        isDynamic={true}
+      >
+        <div className="navbar__item-indicator"></div>
+        {t('headerLink2')}
+      </Link>
+      <Link
+        className="navbar__item"
+        activeClass="navbar__item--active"
+        to="faq"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        isDynamic={true}
+      >
+        <div className="navbar__item-indicator"></div>
+        {t('headerLink3')}
+      </Link>
+      <Link
+        className="navbar__item"
+        activeClass="navbar__item--active"
+        to="footer"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        isDynamic={true}
+      >
+        <div className="navbar__item-indicator"></div>
+        {t('headerLink4')}
+      </Link>
     </div>
   );
 };
 
 // ----------------
-
-Navbar.propTypes = {
-  prop: types.string,
-  active: types.bool,
-};
-
-// Default value for props
-
-Navbar.defaultProps = {};
