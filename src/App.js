@@ -12,7 +12,7 @@ import { Landing } from './pages/CannaLanding';
 export const App = () => {
 
   return (
-    <Landing/>
+    <Landing />
   );
 };
 

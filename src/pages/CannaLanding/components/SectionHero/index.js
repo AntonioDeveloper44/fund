@@ -12,7 +12,7 @@ import { TopDecorationElement } from './components/TopDecorationElement';
 import './styles.scss';
 // ----------------
 
-export const SectionHero = props => {
+export const SectionHero = () => {
   //Render
 
   return (

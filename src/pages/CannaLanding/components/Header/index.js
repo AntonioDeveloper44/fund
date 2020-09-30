@@ -1,10 +1,8 @@
 import React, { useState , useEffect } from 'react';
 import classNames from "classnames";
-
 // Components
 import { Navbar } from './components/Navbar';
 import { Logo } from './components/Logo';
-
 // Static
 import { navigationLinks } from './data';
 // Assets
@@ -13,6 +11,10 @@ import logo from '../../../../assets/images/logo.png'
 import HamburgerButton from './components/HamburgerButton';
 import AsideDrawer from './components/AsideDrawer';
 import './styles.scss';
+
+import { Button } from 'antd';
+import { useTranslation } from 'react-i18next';
+
 // ----------------
 
 
@@ -45,6 +47,13 @@ export const Header = (props) => {
   });
   // Render
 
+  const {i18n} = useTranslation();
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
+
   return (
     <div className={`header${modify}`}>
       <div className="header__content">
@@ -57,6 +66,8 @@ export const Header = (props) => {
         <div className="header__left-block">
           <Navbar links={navigationLinks} />
         </div>
+        <Button type='link' onClick={changeLanguage('ua')}>UA</Button>
+        <Button type='link' onClick={changeLanguage('en')}>ENG</Button>
         <Logo maxWidth={120} image={logo}/>
       </div>
     </div>

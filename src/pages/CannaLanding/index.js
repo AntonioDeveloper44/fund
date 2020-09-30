@@ -26,13 +26,13 @@ export const Landing = () => {
       <Redirect exact from='/' to='/home'/>
 
       <Route path="/home">
-        <Header/>
-        <SectionHero/>
-        <OurFund/>
-        <Author/>{/*вставьте сервисы оплаты сюда */}
-        <Projects/>
-        <Faq />
-        <Footer/>
+          <Header/>
+          <SectionHero/>
+          <OurFund/>
+          <Author/>{/*вставьте сервисы оплаты сюда */}
+          <Projects/>
+          <Faq />
+          <Footer/>
       </Route>
 
       <Route path='/news'><News/></Route>
@@ -40,5 +40,5 @@ export const Landing = () => {
 
       <BackTop/>
     </div>
-  );
+  )
 };
