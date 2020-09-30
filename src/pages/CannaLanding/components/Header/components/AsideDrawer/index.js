@@ -4,6 +4,7 @@ import React from 'react';
 
 import './styles.scss';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 // ----------------
 
@@ -13,33 +14,62 @@ const AsideDrawer = ({ links, isOpen }) => {
   });
 
   // Render
-
+  const { t } = useTranslation();
   return (
     <>
       <aside className={`aside ${modify}`}>
-
-        {links.map((link , index) => {
-          return (
-            <Link
-              key={index}
-              className="navbar__item"
-              activeClass="navbar__item--active"
-              to={link.to}
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              isDynamic={true}
-            >
-              <div className='navbar__item-indicator'></div>
-              <div className='navlink'>
-              <span>{link.label}</span>
-              </div>
-
-            </Link>
-
-          );
-        })}
+        <Link
+          className="navbar__item"
+          activeClass="navbar__item--active"
+          to="ourFund"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          isDynamic={true}
+        >
+          <div className="navbar__item-indicator"></div>
+          {t('headerLink1')}
+        </Link>
+        <Link
+          className="navbar__item"
+          activeClass="navbar__item--active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          isDynamic={true}
+        >
+          <div className="navbar__item-indicator"></div>
+          {t('headerLink2')}
+        </Link>
+        <Link
+          className="navbar__item"
+          activeClass="navbar__item--active"
+          to="faq"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          isDynamic={true}
+        >
+          <div className="navbar__item-indicator"></div>
+          {t('headerLink3')}
+        </Link>
+        <Link
+          className="navbar__item"
+          activeClass="navbar__item--active"
+          to="footer"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          isDynamic={true}
+        >
+          <div className="navbar__item-indicator"></div>
+          {t('headerLink4')}
+        </Link>
       </aside>
     </>
   );

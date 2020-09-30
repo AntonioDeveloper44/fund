@@ -2,27 +2,6 @@ import instagramIcon from '../../../../assets/icons/facebook-icon.svg';
 import facebookIcon from '../../../../assets/icons/facebook-icon.svg';
 import twitterIcon from '../../../../assets/icons/facebook-icon.svg';
 
-
-export const navigationLinks = [
-  {
-    label: 'наш Фонд',
-    to:"ourFund",
-  },
-  {
-    label: 'Проекти ',
-    to:"projects",
-  },
-  {
-    label: 'Запитання ',
-    to:"faq",
-  },
-  {
-    label: 'Контакти ',
-    to:"footer",
-  },
-
-];
-
 export const socialLinks = [
   {
     link: 'https://www.facebook.com/',

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 // Styles
 import './styles/fonts.scss';
@@ -8,12 +8,17 @@ import './styles/index.scss';
 
 
 import { Landing } from './pages/CannaLanding';
+import { Spin } from 'antd';
 
 export const App = () => {
 
   return (
-    <Landing />
-  );
+    <Suspense fallback={<Spin />}>
+      <Landing />
+    </Suspense>
+
+);
+
 };
 
 

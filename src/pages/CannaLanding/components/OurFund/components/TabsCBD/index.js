@@ -1,50 +1,54 @@
 import React from 'react';
 
-import { Tabs } from './../../../../../../components/Tabs';
-import { TabsContent } from '../TabsCBD/components/TabsContent';
+import { Tabs } from '../../../../../../components/Tabs';
+import { TabsContent } from './components/TabsContent';
 import { images } from './components/TabsContent/data';
-import { imagesSecond } from './components/TabsContent/data'
-import { imagesThird } from './components/TabsContent/data'
+import { imagesSecond } from './components/TabsContent/data';
+import { imagesThird } from './components/TabsContent/data';
+import { useTranslation } from 'react-i18next';
 
 export const TabsCBD = () => {
+  const { t } = useTranslation();
+
   const tabLinks = [
-    { name: 'contentBlock', label: 'Що є наш Фонд?' },
-    { name: 'imageBlock', label: 'Кому ми допомагаємо?' },
-    { name: 'justImage', label: 'Приєднуйся до нас!' },
+    { name: 'contentBlock', label: t('tabsTitle1') },
+    { name: 'imageBlock', label: t('tabsTitle2') },
+    { name: 'justImage', label: t('tabsTitle3') },
   ];
 
   const tabContent = [
     {
-      content: () => <TabsContent
-                                  text1="Фонд «ВІРА НАДІЯ ЛЮБОВ» не належить до політичних, олігархічним або релігійним
-                                   організаціям і не фінансуються ними для їх реклами."
-                                  text2="Ми віримо в те, що допомагати дітям потрібно системно, і, поступово міняючи інфраструктуру, поліпшувати умови життя кожної окремо взятої дитини.
-"
-                                  text3="Процес лікування для дітей з важкими діагнозами і їх близьких - важке випробування. І воно підкріплюється бюрократичними неузгодженостями, поганою організацією сучасної охорони здоров'я і браком грошей у сім'ї: державне фінансування рідко покриває повну вартість лікування і тим більше супутніх з хворобою витрат. Нестача коштів призводить до того, що лікування не здійснюється своєчасно і належним чином. Згаяний час - фатальний фактор.
-"
-                                  images={images} />,
+      content: () => (
+        <TabsContent
+          text1={t('tabsContent1text1')}
+          text2={t('tabsContent1text2')}
+          text3={t('tabsContent1text3')}
+          images={images}
+        />
+      ),
       name: 'contentBlock',
     },
     {
-      content: () => <TabsContent
-                                  text1="Наш фонд, створений для дітей і заради дітей, заради майбутнього.
-                                  Ми впевнені, що кожна дитина талановита, і кожен має право на гідні умови для життя і навчання,
-                                   право бути в першу чергу здоровим, почутим, має право на підтримку і допомогу."
-                                  text3="Наше завдання: підтримати дитину, допомогти йому Обеста здоров'я, віру в людей, гідне майбутнє. Ми готові допомогти дитині розвинути його здібності, дати шанс вирости здоровим, щасливим, натхненним ідеями і знаннями."
-                                  text2="У нашій країні через відсутність ранньої діагностики, найчастіше, захворювання виявляють тільки на пізніх стадіях.
-"
-                                  images={imagesSecond} />,
+      content: () => (
+        <TabsContent
+          text1={t('tabsContent2text1')}
+          text3={t('tabsContent2text2')}
+          text2={t('tabsContent2text3')}
+          images={imagesSecond}
+        />
+      ),
 
       name: 'imageBlock',
     },
     {
       content: () => (
-
-        <TabsContent title="Приєднатися може кожен!"
-                     text1="Ми віримо в те, що якщо кожен з нас зробить внесок в загальну справу (нехай навіть самий маленький!) Якість життя наших дітей може підвищитися на порядок!"
-                     text2="Благодійний фонд чекає всіх небайдужих, хто з нами разом творить добро."
-                     text3="Двері фонду відкриті для всіх - ми завжди раді будь-якій допомозі!"
-                     images={imagesThird} />
+        <TabsContent
+          title={t('tabsContent3text3')}
+          text1={t('tabsContent3text4')}
+          text2={t('tabsContent3text5')}
+          text3={t('tabsContent3text6')}
+          images={imagesThird}
+        />
       ),
       name: 'justImage',
     },

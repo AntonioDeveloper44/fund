@@ -23,7 +23,7 @@ export const InfoBlock = () => {
           {t('title')}
         </p>
         <Button size="lg" margin="true" marginTop onClick={() => history.push('/help')}>
-          {t('Допомогти')}
+          {t('heroButton')}
         </Button>
         <Link
           className="navbar__block-item"
@@ -35,7 +35,7 @@ export const InfoBlock = () => {
           duration={500}
           isDynamic={true}
         >
-          дізнатись більше
+          {t('heroLink')}
         </Link>
 
     </div>
