@@ -2,6 +2,7 @@ import React from 'react';
 import { HeaderSimulator } from '../../components/HeaderSimulator/HeaderSimulator';
 
 import './styles.scss'
+import {Redirect} from "react-router-dom";
 
 
 export const Payment = () => {
@@ -9,7 +10,8 @@ export const Payment = () => {
     <>
       <HeaderSimulator />
       <div className="payment">
-      Payment Page will be here :)
+      Payment Page :)
+          <a href='https://www.liqpay.ua/checkout/i59501288695'>допомогти</a>
       </div>
       </>
   )

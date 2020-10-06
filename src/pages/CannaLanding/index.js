@@ -29,7 +29,7 @@ export const Landing = () => {
           <Header/>
           <SectionHero/>
           <OurFund/>
-          <Author/>{/*вставьте сервисы оплаты сюда */}
+          <Author/>
           <Projects/>
           <Faq />
           <Footer/>

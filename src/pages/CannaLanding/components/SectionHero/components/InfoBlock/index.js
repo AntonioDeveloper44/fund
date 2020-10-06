@@ -22,9 +22,12 @@ export const InfoBlock = () => {
         <p>
           {t('title')}
         </p>
-        <Button size="lg" margin="true" marginTop onClick={() => history.push('/help')}>
-          {t('heroButton')}
-        </Button>
+        <a href='https://www.liqpay.ua/checkout/i59501288695'>
+            <Button size="lg" margin="true" marginTop>
+            {t('heroButton')}
+            </Button>
+        </a>
+
         <Link
           className="navbar__block-item"
           activeClass="navbar__block-item--active"
