@@ -16,29 +16,35 @@ import { Redirect, Route } from 'react-router-dom';
 import { News } from '../News/News';
 import { Payment } from '../Payment/Payment';
 import { Faq } from './components/Faq/Faq';
-
+import { Rules } from '../Rules';
 
 // --------------------
 export const Landing = () => {
   return (
     <div className="landing">
-
-      <Redirect exact from='/' to='/home'/>
+      <Redirect exact from="/" to="/home" />
 
       <Route path="/home">
-          <Header/>
-          <SectionHero/>
-          <OurFund/>
-          <Author/>
-          <Projects/>
-          <Faq />
-          <Footer/>
+        <Header />
+        <SectionHero />
+        <OurFund />
+        <Author />
+        <Projects />
+        <Faq />
+        <Footer />
       </Route>
 
-      <Route path='/news'><News/></Route>
-      <Route path='/help'><Payment/></Route>
+      <Route path="/news">
+        <News />
+      </Route>
+      <Route path="/help">
+        <Payment />
+      </Route>
+      <Route path="/rules">
+        <Rules />
+      </Route>
 
-      <BackTop/>
+      <BackTop />
     </div>
-  )
+  );
 };
