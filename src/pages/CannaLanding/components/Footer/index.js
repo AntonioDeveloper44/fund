@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import  { Modal, Divider } from 'antd';
 import { Button, Tooltip } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
@@ -8,44 +8,27 @@ import { socialLinks } from './data';
 // Styles
 
 import './styles.scss';
+import {useTranslation} from "react-i18next";
 
 
 
-export class Footer extends React.Component  {
-  state = { visible: false };
+export const Footer = () =>  {
+  const [visible, setVisible] = useState(false);
+  const {t} = useTranslation()
 
-  showModal = () => {
-    this.setState({
-      visible: true,
-    });
-  };
-
-  handleOk = e => {
-    this.setState({
-      visible: false,
-    });
-  };
-
-  handleCancel = e => {
-    this.setState({
-      visible: false,
-    });
-  };
-
-  render() {
     return (
       <div className="footer" id="footer">
         <div className="footer__content">
           <Modal
             title="Basic Modal"
-            visible={this.state.visible}
+            visible={visible}
             footer={[
-              <Button key="back" onClick={this.handleCancel}>
+              <Button key="back" onClick={() => setVisible(false)}>
                 Відмінити
               </Button>,
-              <Button key="submit" type="primary"n onClick={this.handleOk}>
+              <Button key="submit" type="primary"n onClick={() => setVisible(false)}>
                 Добре
-              </Button>,
+              </Button>
             ]}
           >
             <p>Дякуємо за підписку...</p>
@@ -53,17 +36,17 @@ export class Footer extends React.Component  {
           </Modal>
 
 
-          <Divider> Віра Надія Любов</Divider>
+          <Divider>{t("foo1")}</Divider>
           <div className="footer__social-block">
             <SocialBlock links={socialLinks} />
           </div>
           <Divider type="vertical" />
           <div className="footer__subscribe-block">
-            <p>Підписка на новини</p>
+            <p>{t("foo2")}</p>
             <div className="s-input">
               <input type="email" placeholder="Email" />
               <Tooltip title="subscribe">
-                <Button onClick={this.showModal} icon={<ArrowRightOutlined />} />
+                <Button onClick={ () => setVisible(true) } icon={<ArrowRightOutlined />} />
               </Tooltip>
             </div>
             <p>© 2020 БО "Віра Надія Любов"</p>
@@ -84,7 +67,5 @@ export class Footer extends React.Component  {
         </div>
       </div>
     )
-  }
-
 };
 

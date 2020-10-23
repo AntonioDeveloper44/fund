@@ -1,47 +1,44 @@
 import React from 'react';
 import { CheckOutlined } from '@ant-design/icons';
 import './styles.scss';
+import {useTranslation} from "react-i18next";
 
 export const TabContentPlanned = () => {
+    const {t} = useTranslation()
+
   return (
     <div className="planned-tab">
-      <div className="planned-tab__title">НДСЛ "Охмадит" м.Київ</div>
-      <p>Що планується реалізувати:</p>
+      <div className="planned-tab__title">{t("НДСЛ")}</div>
+      <p>{t("what")}</p>
       <p>
-        Подальше оснащення НДСЛ Охмадит необхідною реконструкцією хірургічного
-        корпусу для комфортного перебування дітей та їх батьків. А саме:{' '}
+          {t("what1")}
       </p>
       <p>
-        <CheckOutlined /> заміна застарілих вікон на сучасні енергоефективні
+        <CheckOutlined /> {t("what2")}
       </p>
 
       <p>
-        <CheckOutlined /> реконструкція зон загального користування
+        <CheckOutlined />{t("what3")}
       </p>
       <p>
-        <CheckOutlined /> зміна санвузлів та комунікацій до них
+        <CheckOutlined /> {t("what4")}
       </p>
       <div className="planned-tab__cost">
-        Загальна сума збору: 2 мільйони грн.{' '}
+          {t("zcost")}
       </div>
 
       <div className="planned-tab__title">
-        Науково-практичний медичний центр “Реабілітація” м.Ужгород
+          {t("reabilitation")}
       </div>
-      <p>Що планується реалізувати:</p>
+      <p>{t("whatplan")}</p>
       <p>
-        <CheckOutlined /> Фонд Віра Надія Любов планує часткову реставрацію
-        одної з трьох лабораторій, які пройшли атестацію МОЗ України і
-        підтвердили право на проведення вимірювань у сфері охорони здоров’я
-        відповідно до заявленої галузі атестації (клініко-діагностична
-        лабораторія, лабораторія неінвазивних методів дослідження, лабораторія
-        імунології) і одержали відповідні Свідоцтва.{' '}
+        <CheckOutlined /> {t("whatplan2")}
         <a href="http://www.rehab.uzhgorod.ua/" style={{ color: 'red' }}>
           http://www.rehab.uzhgorod.ua/
         </a>
       </p>
       <div className="planned-tab__cost">
-        Загальна сума збору: 1 мільйон грн.
+          {t("whatplan3")}
       </div>
     </div>
   );

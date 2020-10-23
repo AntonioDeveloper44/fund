@@ -17,7 +17,7 @@ export const TabContentRealized = () => {
       </p>
       <p>
         Переглянути відгук та фотогрфії проведенних робіт від лікарів та центру
-        "ОХМАДИТ" можно тут :{' '}
+        "ОХМАДИТ" можно тут :
         <a
           href="https://m.facebook.com/story.php?story_fbid=3243944682371581&id=100002682434812"
           style={{ color: 'red' }}

@@ -34,5 +34,36 @@
     "slider1desc3": "'We believe that we need to help systematically and gradually improve the living conditions of each individual. What is our mission? \\ N' +\n      '- to help all needy people. \\ n' +\n      '- to help people in hospitals, schools, children. gardens, sports clubs and other organizations; '",
 
     "buttonProjects": "All Projects",
-    "titleProjects": "\nOur good deeds"
+    "titleProjects": "\nOur good deeds",
+
+    "planned projects": "Planned projects",
+    "Realized projects": "Realized projects",
+
+    "НДСЛ": "NDSL \"Okhmadit\" m.Kiyiv",
+    "what": "\nTo plan to implement:",
+    "what1": "Further, the NDSL Okhmadit is equipped with the necessary reconstruction of the surgical\n        to the building for a comfortable transfer of children and their fathers. And itself:",
+    "what2": "replacement of old winners for current energy efficiency",
+    "what3": "\nreconstruction of public areas",
+    "what4": "\nchange of bathrooms and communications to them",
+    "zcost": "Total fee: UAH 2 000 000 000 ",
+    "reabilitation": "Scientific and practical medical center \"Rehabilitation\" Uzhgorod",
+    "whatplan": "\nWhat is planned to implement:",
+    "whatplan2": "Vira Nadiya Lyubov Foundation is planning a partial restoration\n        one of the three laboratories certified by the Ministry of Health of Ukraine and\n        confirmed the right to take measurements in the field of health care\n        in accordance with the declared field of certification (clinical and diagnostic\n        laboratory, laboratory of non-invasive research methods, laboratory\n        immunology) and received the relevant Certificates.",
+    "whatplan3": "Total fee: UAH 1 million.",
+
+    "faqTitle": "\nThis is a question that partners and guests are often interested in",
+    "faq1": "\n+ Is your fund in the Unified State Register of Ukraine?",
+    "faq2": "Data on the registration number of the single contribution payer: 10000001391070",
+    "faq3": "Date and number of entry in the Unified State Register of Legal Entities, Individual Entrepreneurs and Public Associations:\n          10.12.2018, 1 073 102 0000 039203",
+    "faq4": "+ Date and number of the record in which the legal entity is registered:",
+    "faq5": "12/10/2018, MAIN DEPARTMENT OF REGIONAL STATISTICS, 21680000\n          10.12.2018, 265818332658, STATE TAX INSPECTION IN SOLOMIAN DISTRICT OF THE MAIN DEPARTMENT OF THE SFS IN KYIV, 39471390 (data on registration as a taxpayer)\n          10.12.2018, 10000001391070, STATE TAX INSPECTION IN SOLOMYAN DISTRICT OF THE MAIN DEPARTMENT OF THE SFS IN KYIV, 39471390 (data on registration as a single contribution payer)\n          Not subject to registration in the PENSION FUND OF UKRAINE in connection with the adoption of the Law of Ukraine dated 04.07.2013 № 406-VII \"On Amendments to Certain Legislative Acts of Ukraine in Connection with Administrative Reform\"",
+    "faq7": "\n+ Legal entity identification code:",
+    "faq6": "\nLegal entity identification code:\n          42684780",
+    "faq8": "+ For private donations",
+    "faq9": "For private donations: Privatbank Map 5168 7422 0840 1582 Didenko Olga Pavlovna",
+    "faq10": "+ Information on opening a Fund account.",
+
+    "foo1": "\nFaith Hope Love",
+    "foo2": "News subscription",
+    "foo3": ""
 }
