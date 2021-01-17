@@ -25,6 +25,11 @@ export const InfoBlock = () => {
           {t('heroButton')}
         </Button>
       </a>
+      <a href="https://www.portmone.com.ua/r3/uk/pay-shop?id=H4sIAAAAAAAAAytIrExN9UyxNTK2NLBQS0ktTi7KLCjJzM+zvTDxwu4LGy5svrDvwpaL0y7svLD3wo4LOxUubAIytl5sBArvUstJzEsvTUxPtS3NVisoSk0sLcmIT8tJTLf1U0vKzMmJTy4tKkrNS660DXX0AAD4FKVWagAAAA==">
+        <Button size="lg" margin="true" marginTop>
+          Portmone
+        </Button>
+      </a>
       <div className="rules-box">
         <Checkbox defaultChecked={true} style={{ marginRight: 5 }} />
         <span
